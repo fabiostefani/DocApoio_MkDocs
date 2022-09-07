@@ -1,17 +1,12 @@
-# Welcome to Docs do Fabio
+# Sobre
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Este site serve como consulta a referência de comandos para ser utilizado no dia a dia.
+Conforme for sendo estudado novas tecnologias, vou adicionando aqui seus comandos utilizados.
 
-## Commands
+## Stacks
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* [Linux](linux/index.md) 🐧
+* Docker (futuro)
+* ...
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Se você chegou até aqui nesse site e gostaria de contribuir com os comandos ou melhorar, fique a vontade para acessar o repositório acima e fazer a sua contribuição.

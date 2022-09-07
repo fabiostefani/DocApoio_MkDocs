@@ -4,9 +4,8 @@ theme:
   features:
     # - navigation.instant
     # - navigation.tracking    
-    # - navigation.sections
     - navigation.indexes
-    - navigation.expand
+    - navigation.expand    
   icon:
     repo: fontawesome/brands/github
   name: material
@@ -26,8 +25,8 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-repo_url: https://github.com/squidfunk/mkdocs-material
-repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/fabiostefani/DocApoio_MkDocs
+repo_name: fabiostefani/DocApoio_MkDocs
 
 plugins:
   - search
@@ -36,8 +35,7 @@ nav:
   - index.md
   - Linux: 
     - linux/index.md    
-    - Linux 1: linux/linux-1.md
-    - Linux n: linux/linux-2.md        
+    - Exemplos IaC: linux/exemplos_iac.md    
   - Docker:
     - docker/index.md    
     - Docker 1: docker/docker-1.md
