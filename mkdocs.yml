@@ -1,0 +1,44 @@
+site_name: Documentação de apoio do Fabio
+
+theme:
+  features:
+    # - navigation.instant
+    # - navigation.tracking    
+    # - navigation.sections
+    - navigation.indexes
+    - navigation.expand
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  language: pt-BR
+  font:
+    code: Roboto Mono
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: squidfunk/mkdocs-material
+
+plugins:
+  - search
+  
+nav:
+  - index.md
+  - Linux: 
+    - linux/index.md    
+    - Linux 1: linux/linux-1.md
+    - Linux n: linux/linux-2.md        
+  - Docker:
+    - docker/index.md    
+    - Docker 1: docker/docker-1.md
+    - Docker n: docker/docker-2.md        
