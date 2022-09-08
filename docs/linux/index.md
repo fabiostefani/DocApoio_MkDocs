@@ -22,6 +22,7 @@ Comandos do linux
 * `nano/vim` - para editar arquivos
 * `systemctl status [service]` - para verificar a situação de algum serviço
 * `xxx | grep [texto]` - para fazer buscar
+* `lsblk` - para listar os discos da máquina
 * `fdisk` - para criar partições no disco
 * `mkfs` - para formatar a partição criada. Deve ser informado qual o tipo de arquivo que desejo criar e qual disco.
 * `mount [disco] [dir]` - para montar um disco no linux e exibir seu conteúdo.
@@ -39,6 +40,9 @@ Comandos do linux
 * `killall [nome processo]` - para encerrar por nome do processo.
 * `w` - mostra quem está logado
 * `who` - mostra quem está logado com o pid para ser desconectado
+* `[command] --help` - mostra a ajuda para aquele comando.
+* `man [command]` - mostra o manual de utilização para o comando.
+* `help [command]` - apresenta o help do comando de forma formatada
 
 ## Arquivos
 
@@ -57,7 +61,19 @@ Comandos do linux
 
 * `touch [nome arquivo]` - Cria um arquivo
 * `find -name [nome arquivo]` - Localiza um arquivo a partir do diretório currente
-* `mkdir [nome dir]` - Cria um diretório com o nome informado
+* `mkdir [nome dir]` - Cria um diretório com o nome informado. 
+    
+    ✔️ Para criar diretórios com espaços no nome, deve ser utilizado ' no nome. Se não colocar entre aspas, cada pedaço do nome vai ser considerado um diretório a ser criado.
+
+* `rmdir [nome dir]` - para remover um diretório.
+* `rm` - para excluir arquivos.
+    * `[ -r]` - apaga os arquivos de forma recorrente, vai entrando em cada diretório e apagando os arquivos.
+    * `[ -rf]` - executa de forma recorrente a exclusão dos arquivos e apaga os diretórios juntos.
+    * `[ -rv]` - vai mostrando em tela o que está sendo feito.
+    * `[ -ri]` - solicita confirmação arquivo por arquivo.
+
+    ✔️ Pode ser utilizado todas as variações de comandos juntos.
+
 * `cat [nome arquivo]` - para visualizar o conteudo de um arquivo
 * `cp` - para efetuar a copia de arquivos
 * `mov` - move arquivos. Também utilizado para renomear arquivos.
