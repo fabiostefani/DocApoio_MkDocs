@@ -69,7 +69,11 @@ Comandos do linux
 
 * `pwd` - Mostra o diretório currente.
 * `touch [nome arquivo]` - Cria um arquivo
-* `find -name [nome arquivo]` - Localiza um arquivo a partir do diretório currente
+* `find <diretorio> -name [nome arquivo]` - Localiza um arquivo a partir do diretório currente
+    * `[ -user <nome user>]` - para especificar o usuário proprietário
+* `locate <name>` - busca a partir de uma base de dados que o SO constroi quando é inicializado. É mais rapido que o find. Porém arquivos recem adicionados não serão localizados, pois precisa ser atualizado a base de dados. Para efetuar a atualização, deve ser chamado o atualizadb
+* `whereis <nome>` - busca de comandos, código fonte, manuais, etc.
+* `which <nome>` - busca somente nos diretórios das variáveis de ambiente.
 * `mkdir [nome dir]` - Cria um diretório com o nome informado. 
     
     ✔️ Para criar diretórios com espaços no nome, deve ser utilizado ' no nome. Se não colocar entre aspas, cada pedaço do nome vai ser considerado um diretório a ser criado.
@@ -86,6 +90,19 @@ Comandos do linux
 * `cat [nome arquivo]` - para visualizar o conteudo de um arquivo
 * `cp` - para efetuar a copia de arquivos
 * `mov` - move arquivos. Também utilizado para renomear arquivos.
+* `tar` - para agrupar ou desagrupar os arquivos
+    * `[ c ]` - para agrupar em um unico arquivo
+    * `[ x ]` - para desagrupar em um unico arquivo
+    * `[ t ]` - para listar os arquivos dentro um grupo
+    * `[ f ]` - para informar o nome do arquivo
+    * `[ v ]` - para mostrar o que está sendo feito passo a passo
+    * `[ z ]` - para ja compactar quando estiver agrupando o arquivo
+    Sintaxe: `tar cf backup.tar *png`
+
+* `gzip` - para compactar um arquivo
+    * `[ -k ]` - para manter o arquivo original sem alterações
+    * `[ -d ]` - para descompactar um arquivo
+* `gunzip` - para descompactar um arquivo .gz
 
 ![Estrutura de diretórios](/images/estruturaDiretorioLinux.png "Estrutura diretórios")
 
