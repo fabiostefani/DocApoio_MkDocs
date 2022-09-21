@@ -13,7 +13,6 @@ Comandos do linux
     * `[install]` - instala aplicativos
     * `[update]` - atualiza aplicativos
     * `[upgrade]` - atualiza a lista de aplicativos disponíveis
-* `pwd` - Mostra o diretório currente.
 * `history` - Mostra o histórico dos comandos utilizados.
     * `[<qtde comandos>]` - apresenta os ultimos XX comandos executados
     * `[! <numero comando>]` - executa novamente o comando
@@ -49,18 +48,26 @@ Comandos do linux
 ## Arquivos
 
 * `ls` - Lista os arquivos de um diretório.
+    * `[-l]` - apresenta os arquivos de forma detalhada.
+    * `[-a]` - mostra os arquivos que estão ocultos. Arquivos ocultos no linux são os arquivos que começam com **.**
     * `[| more]` - apresenta os arquivos de forma paginada. Para cancelar a exibição, CTRL C.
     * `[<nome/parte do arquivo>]` - verifica se o arquivo existe.
     * `[<nome/parte do arquivo>*]` - verifica se o arquivo existe com aqueles caracteres e qualquer caracter aonde tiver o *******.
-    * `[<nome/parte do arquivo>?]` - verifica se o arquivo existe com aqueles caracteres e substitui o **?** por qualquer letra. Exemplo, g?o*, irá buscar arquivos que iniciam com **g**, tenham qualquer letra, depois o **o** e por final qualquer caracter.
+    * `[<nome/parte do arquivo>?]` - verifica se o arquivo existe com aqueles caracteres e substitui o **?** por qualquer letra. Exemplo, g?o*, 
+    irá buscar arquivos que iniciam com **g**, tenham qualquer letra, depois o **o** e por final qualquer caracter.
+    * `[[<caracter>]]]` - busca o arquivo com aquele caracterer e posso ter mais valores. Exemplo, **Aula[12345]**, vai listar Aula1, Aula2, Aula3, Aula4 e Aula5. Uma outra alternativa é Aula[1-5], aonde mostra a mesma sequencia de arquivos anterior.
+    * `[{<string>}]` - diferente a busca com os **[]**, a chave é passado uma string para fazer a busca dos arquivos. Exemplo, **[aula, Aula, AULA]11**, vai retornar os arquivos aula11, Aula11 e AULA11
 
 * `cd` - Navega entre os diretórios.
+    * `[]` - vai para o diretório padrão do usuário logado
     * `[/]` - vai para o diretório raíz (root).
     * `[..]` - retorna um nível de diretório.
     * `[<nome diretório>]` - vai para o diretório informado.
+    * `[~]` - vai para o diretório padrão do usuário logado    
 
     ✔️ Quando estiver montando o comando de acesso ao diretório, se der tab 2x, vai ser listado os dir/arquivos que tem naquele caminho.
 
+* `pwd` - Mostra o diretório currente.
 * `touch [nome arquivo]` - Cria um arquivo
 * `find -name [nome arquivo]` - Localiza um arquivo a partir do diretório currente
 * `mkdir [nome dir]` - Cria um diretório com o nome informado. 
@@ -80,10 +87,12 @@ Comandos do linux
 * `cp` - para efetuar a copia de arquivos
 * `mov` - move arquivos. Também utilizado para renomear arquivos.
 
+![Estrutura de diretórios](/images/estruturaDiretorioLinux.png "Estrutura diretórios")
+
 ## Permissões
 
 * `chmod` - para dar permissões a arquivos/diretórios. A estrutura padrão de apresentação das permissões é: **drwxrwxrwx**
-    * **d**rwxrwxrwx - indica se é diretório ou file.
+    * **d**rwxrwxrwx - indica se é diretório **(d)**, file **(-)** ou link **(l)**.
     * d**rwx**rwxrwx os próximos indicam as permissões do dono do arquivo.
     * drwx**rwx**rwx esses indicam as permissões do grupo.
     * drwxrwx**rwx** indica as permissões dos demais usuários
