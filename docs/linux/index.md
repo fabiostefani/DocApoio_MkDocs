@@ -43,6 +43,8 @@ Comandos do linux
 * `[command] --help` - mostra a ajuda para aquele comando.
 * `man [command]` - mostra o manual de utilização para o comando.
 * `help [command]` - apresenta o help do comando de forma formatada
+* `echo` - mostra informações na tela. Exemplo, **echo fabio**, vai mostrar fabio escrito na tela.
+    * `[$$]` - mostra o PID do processo atual
 
 ## Arquivos
 
@@ -95,6 +97,19 @@ Comandos do linux
     * `[777]` - vai dar permissão total para os 3 níveis de acesso
     * `[750]` - vai dar permissão total para o dono, leitura e execução para o grupo e nenhuma permissão para os demais usuários
 * `chowm` - para mudar o proprietário de um diretório/arquivo    
+
+
+## Variáveis
+
+* Para declarar uma varável no linux, deve ser utilizado a sintaxe <br>
+`VARIAVEL=VALOR` <br>
+E para efetuar a leitura dela, deve ser utilizado o **$** na frente <br>
+`$VARIAVEL`
+* Por padrão, as variáveis somente são visiveis dentro da sessão que ela foi criada. <br>
+Se precisar que a variável fique visível para outras sessões filhas, deve ser efetuada uma exportação dela. <br>
+`export VARIAVEL` <br>
+* `set` - mostra todas as variáveis do ambiente
+* `env` - mostra somente as variáveis exportadas
 
 ## Dicas
 
