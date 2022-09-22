@@ -87,7 +87,9 @@ Comandos do linux
 
     ✔️ Pode ser utilizado todas as variações de comandos juntos.
 
-* `cat [nome arquivo]` - para visualizar o conteudo de um arquivo
+* `cat [nome arquivo]` - para visualizar o conteudo de um arquivo, mostrando ele na tela.
+* `less [nome arquivo]` - para visualizar o conteudo de um arquivo na tela aplicando a paginação, ideal para arquivos maiores.
+    * `[ \ ]` - após o arquivo aberto, se digitar **\\** vai abrir opção de pesquisa dentro do arquivo. Para avançar a nova pesquisa, pode somente pesquisar **N**
 * `cp` - para efetuar a copia de arquivos
 * `mov` - move arquivos. Também utilizado para renomear arquivos.
 * `tar` - para agrupar ou desagrupar os arquivos
