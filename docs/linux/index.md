@@ -35,8 +35,12 @@ Comandos do linux
     * `[a]` - lista para todos os usuários
     * `[u]` - mostra o nome do usuário e a data
     * `[x]` - mostra os processos fora do console também
+    * `[| grep <nome>]` - pesquisa os processos com aquele nome
+* `pgrep <nome>` - pesquisa os PIDs que possuem aquele nome
+* `pstree | less` - mostra a arquivo de processos que estão ligados uma na outra
 * `kill` - para encerrar um processo
 * `killall [nome processo]` - para encerrar por nome do processo.
+* `pkill <nome>` - mata o processo que possui aquele nome
 * `w` - mostra quem está logado
 * `who` - mostra quem está logado com o pid para ser desconectado
 * `[command] --help` - mostra a ajuda para aquele comando.
