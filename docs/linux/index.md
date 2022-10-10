@@ -18,7 +18,6 @@ Comandos do linux
     * `[! <numero comando>]` - executa novamente o comando
     * `[!!]` - executa o último comando novamente
     * `[! grep "<nome >"]` - busca os comandos que contém aquele nome em sua sintaxe
-* `nano/vim` - para editar arquivos
 * `systemctl status [service]` - para verificar a situação de algum serviço
 * `xxx | grep [texto]` - para fazer buscar
 * `lsblk` - para listar os discos da máquina
@@ -91,7 +90,9 @@ Comandos do linux
 
     ✔️ Pode ser utilizado todas as variações de comandos juntos.
 
-* `cat [nome arquivo]` - para visualizar o conteudo de um arquivo
+* `cat [nome arquivo]` - para visualizar o conteudo de um arquivo, mostrando ele na tela.
+* `less [nome arquivo]` - para visualizar o conteudo de um arquivo na tela aplicando a paginação, ideal para arquivos maiores.
+    * `[ \ ]` - após o arquivo aberto, se digitar **\\** vai abrir opção de pesquisa dentro do arquivo. Para avançar a nova pesquisa, pode somente pesquisar **N**
 * `cp` - para efetuar a copia de arquivos
 * `mov` - move arquivos. Também utilizado para renomear arquivos.
 * `tar` - para agrupar ou desagrupar os arquivos
@@ -107,6 +108,7 @@ Comandos do linux
     * `[ -k ]` - para manter o arquivo original sem alterações
     * `[ -d ]` - para descompactar um arquivo
 * `gunzip` - para descompactar um arquivo .gz
+* `grep <test>` - para filtrar uma string, numero, etc..  vai jogar na tela
 
 ![Estrutura de diretórios](/images/estruturaDiretorioLinux.png "Estrutura diretórios")
 
@@ -141,8 +143,15 @@ Se precisar que a variável fique visível para outras sessões filhas, deve ser
 * `set` - mostra todas as variáveis do ambiente
 * `env` - mostra somente as variáveis exportadas
 
+## Editores
+* `nano/vim` - para editar arquivos
+![Comandos VIM](/images/vi-help-sheet-01-large2.jpg "sheet comandos VIM")
+
 ## Dicas
 
 **$** no final do caminho do prompt indica que não está logado como super user
 
 **#** no final do caminho do prompt indica que está logado como super user.    
+
+
+![Comandos VIM](/images/linux-cheat-sheet-612x792-1.png "sheet comandos")
