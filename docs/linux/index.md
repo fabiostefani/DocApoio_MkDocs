@@ -47,6 +47,13 @@ Comandos do linux
 * `help [command]` - apresenta o help do comando de forma formatada
 * `echo` - mostra informações na tela. Exemplo, **echo fabio**, vai mostrar fabio escrito na tela.
     * `[$$]` - mostra o PID do processo atual
+* `top` - mostra informações  referente a máquina e processos que estão sendo executados naquele momento
+* `free` - mostra informações da memória da máquina
+    * `[-h]` - apresenta as informações da máquina de forma humanizada.
+* `uptime` - mostra informações de quanto tempo a máquina está ligada
+* `uname` - mostra informações do sistema operacional
+* `df` - mostra informações de discos da máquina
+    * `[-h]` - apresenta as informações de forma humanizada.
 
 ## Arquivos
 
