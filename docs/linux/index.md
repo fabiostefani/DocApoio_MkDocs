@@ -5,6 +5,7 @@ Comandos do linux
 ## Administração
 
 * `shutdown [tempo]` - desliga a máquina no tempo informado (minutos). Informar zero, desliga a máquina agora..
+* `poweroff` - desliga a máquina
 * `ip` - Mostra a configuração de rede.
 * `date` - Mostra a data do servidor.
 * `sudo` - Executa a ação como administrador.
