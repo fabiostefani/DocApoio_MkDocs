@@ -1,13 +1,23 @@
-# Welcome to Docker
+# Docker ![](/images/icons8-docker-24.png)
 
-DOCKERRRRRR
+Comandos do Docker 
 
-## Commands
+## CLI Docker 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `docker`
+    * [`ps`] - mostra os containers que estão em execução.
+        * [`-a`] - mostra todo os containers.
+    * [`<comando> --help`] - informações adicionados do comando docker.
+    * [`run --name <nome do container> -p <porta servidor>:<porta container> <imagem docker>:<version>`] - Executa um container.
+        * [`--name <nome do container>`] - Executa um container especificando o nome do container.
+        * [`-p <porta servidor>:<porta container>`] - Executa um container fazendo o roteamento das portas do servidor para a porta do container.
+        * [`<imagem docker>:<version>`] - Informa qual a imagem docker deve ser executada. Se não for informado qual o version, será considerada o latest        
+    * [`stop <id container>`] - interrompe um container em execução
+    * [`start <id container>`] - inicia um container ja criado
+    * [`exec --it nginx //bin/bash`] - disponibiliza a execução de comandos dentro do container
+        * [`--it`] - 
+        * [`<nome do container>`] - 
+        * [`<bash dentro container>`] - 
 
 ## Project layout
 
