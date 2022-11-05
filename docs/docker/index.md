@@ -18,6 +18,14 @@ Comandos do Docker
         * [`--it`] - 
         * [`<nome do container>`] - 
         * [`<bash dentro container>`] - 
+    * [`pull <imagem:version>`] - baixa a imagem para o servidor
+    * [`logs <id containier>`] - mostra os logs do container
+    * [`rm <id containier>`] - remove um container
+        * [`-f`] - força a remoção do container
+    * [`inspect <id containier>`] - apresenta as informações do container
+    * [`rmi <nome da imagem>`] - remove uma imagem
+    * [`image`] - trabalha com as imagens
+        * [`ls`] - lista as imagens
 
 ## Project layout
 
