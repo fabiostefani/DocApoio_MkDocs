@@ -162,4 +162,7 @@ Se precisar que a variável fique visível para outras sessões filhas, deve ser
 **#** no final do caminho do prompt indica que está logado como super user.    
 
 
-![Comandos VIM](/images/linux-cheat-sheet-612x792-1.png "sheet comandos")
+![Comandos](/images/linux-cheat-sheet-612x792-1.png "sheet comandos")
+![Comandos](/images/Linux-1-2.fw.png "sheet comandos")
+![Comandos](/images/Linux-2-2.fw.png "sheet comandos")
+![Comandos UBUNTU](/images/Ubuntu-1.fw.png "sheet comandos ubuntu")

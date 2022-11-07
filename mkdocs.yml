@@ -37,6 +37,4 @@ nav:
     - linux/index.md    
     - Exemplos IaC: linux/exemplos_iac.md    
   - Docker:
-    - docker/index.md    
-    - Docker 1: docker/docker-1.md
-    - Docker n: docker/docker-2.md        
+    - docker/index.md             
