@@ -14,6 +14,9 @@ Comandos do Docker
         * [`-p <porta servidor>:<porta container>`] - Executa um container fazendo o roteamento das portas do servidor para a porta do container.
         * [`<imagem docker>:<version>`] - Informa qual a imagem docker deve ser executada. Se não for informado qual o version, será considerada o latest        
         * [`-d`] - vai executar a imagem e desatachar o prompt, libera para continuar sendo utilizado
+        * [`-it`] - interactive mode, deixa o console do container disponível para ser utilizado
+        * [`--entrypoint <entrypoint>`] - especifica qual é o entrypoint da imagem que estou executando
+        * [`-v <origem>:<destino container>`] - mapeia um volume para dentro do container
     * [`stop <id container>`] - interrompe um container em execução
     * [`start <id container>`] - inicia um container ja criado
     * [`exec --it nginx //bin/bash`] - disponibiliza a execução de comandos dentro do container
@@ -28,6 +31,9 @@ Comandos do Docker
     * [`rmi <nome da imagem>`] - remove uma imagem
     * [`image`] - trabalha com as imagens
         * [`ls`] - lista as imagens
+    * [`build <caminho docker file> -t <nome imagem:`] - compila uma imagem. Precisa de um 
+            * [`-t <nome imagem>`] - especifica o nome da imagem
+    * [`push`] - envia a imagem para o docker hub
 
 ## Comandos úteis Linux
 
