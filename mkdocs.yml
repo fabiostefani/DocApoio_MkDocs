@@ -38,3 +38,4 @@ nav:
     - Exemplos IaC: linux/exemplos_iac.md    
   - Docker:
     - docker/index.md             
+    - Exemplo DockerFile: docker/exemplos_dockerfile.md    

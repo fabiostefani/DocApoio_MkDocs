@@ -17,6 +17,7 @@ Comandos do Docker
         * [`-it`] - interactive mode, deixa o console do container disponível para ser utilizado
         * [`--entrypoint <entrypoint>`] - especifica qual é o entrypoint da imagem que estou executando
         * [`-v <origem>:<destino container>`] - mapeia um volume para dentro do container
+        * [`-e <enviroment>`] - para informar uma variável de ambiente que será utilizada pelo container. Pode ser passada várias vezes. Exemplo -e app=fabio 
     * [`stop <id container>`] - interrompe um container em execução
     * [`start <id container>`] - inicia um container ja criado
     * [`exec --it nginx //bin/bash`] - disponibiliza a execução de comandos dentro do container
