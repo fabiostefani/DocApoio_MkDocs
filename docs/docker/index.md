@@ -2,8 +2,20 @@
 
 Comandos do Docker 
 
-## CLI Docker 
+## CLI Docker (https://docs.docker.com/engine/reference/run/)
 
+### Imagens
+* `docker`
+    * [`<comando> --help`] - informações adicionados do comando docker.    
+    * [`image`] - trabalha com as imagens
+        * [`ls`] - lista as imagens
+    * [`build <caminho docker file> -t <nome imagem:`] - compila uma imagem. Precisa de um 
+            * [`-t <nome imagem>`] - especifica o nome da imagem
+    * [`push`] - envia a imagem para o docker hub
+    * [`pull <imagem:version>`] - baixa a imagem para o servidor
+    * [`rmi <nome da imagem>`] - remove uma imagem
+    
+### Containers
 * `docker`
     * [`ps`] - mostra os containers que estão em execução.
         * [`-a`] - mostra todo os containers.
@@ -18,23 +30,23 @@ Comandos do Docker
         * [`--entrypoint <entrypoint>`] - especifica qual é o entrypoint da imagem que estou executando
         * [`-v <origem>:<destino container>`] - mapeia um volume para dentro do container
         * [`-e <enviroment>`] - para informar uma variável de ambiente que será utilizada pelo container. Pode ser passada várias vezes. Exemplo -e app=fabio 
+        * [`--rm`] - vai remover o container após utilizar ele.
     * [`stop <id container>`] - interrompe um container em execução
     * [`start <id container>`] - inicia um container ja criado
     * [`exec --it nginx //bin/bash`] - disponibiliza a execução de comandos dentro do container
         * [`--it`] - 
         * [`<nome do container>`] - 
         * [`<bash dentro container>`] - 
-    * [`pull <imagem:version>`] - baixa a imagem para o servidor
     * [`logs <id containier>`] - mostra os logs do container
     * [`rm <id containier>`] - remove um container
         * [`-f`] - força a remoção do container
-    * [`inspect <id containier>`] - apresenta as informações do container
-    * [`rmi <nome da imagem>`] - remove uma imagem
-    * [`image`] - trabalha com as imagens
-        * [`ls`] - lista as imagens
-    * [`build <caminho docker file> -t <nome imagem:`] - compila uma imagem. Precisa de um 
-            * [`-t <nome imagem>`] - especifica o nome da imagem
+    * [`inspect <id containier>`] - apresenta as informações do container    
     * [`push`] - envia a imagem para o docker hub
+    * [`top <idcontainer>`] - mostra os processos que estão em execução dentro do container
+    * [`kill <idcontainer>`] - encerra a execução do container
+
+### Volumes    
+
 
 ## Comandos úteis Linux
 
