@@ -31,6 +31,7 @@ Comandos do Docker
         * [`-v <origem>:<destino container>`] - mapeia um volume para dentro do container
         * [`-e <enviroment>`] - para informar uma variável de ambiente que será utilizada pelo container. Pode ser passada várias vezes. Exemplo -e app=fabio 
         * [`--rm`] - vai remover o container após utilizar ele.
+        * [`--network <rede>`] - especifica qual rede aquele container vai usar
     * [`stop <id container>`] - interrompe um container em execução
     * [`start <id container>`] - inicia um container ja criado
     * [`exec --it nginx //bin/bash`] - disponibiliza a execução de comandos dentro do container
@@ -46,7 +47,31 @@ Comandos do Docker
     * [`kill <idcontainer>`] - encerra a execução do container
 
 ### Volumes    
+* `docker`
+    * [`<comando> --help`] - informações adicionados do comando docker.    
+    * [`volume`] - trabalha com os volumes
+        * [`ls`] - lista os volumes
+        * [`create <nome>`] - cria um volume
+        * [`inspect <nome>`] - apresenta as informações do volume
 
+### Redes    
+* `docker`
+    * [`<comando> --help`] - informações adicionados do comando docker.    
+    * [`networl`] - trabalha com network
+        * [`ls`] - lista as redes
+        * [`create <nome> -d bridge`] - cria uma rede, especificando o driver, que nesse caso é o Bridge                
+        * [`inspect <nome>`] - apresenta as informações da rede
+        * [`connect <rede> <container>`] - conecta um container em uma rede
+        * [`disconnect <rede> <container>`] - desconecta um container em uma rede
+        * [`prune`] - apaga as redes não utilizadas
+        * [`rm <nome da rede>`] - remove uma rede
+
+### Compose 
+* `docker-compose`
+    * [`<comando> --help`] - informações adicionados do comando docker.    
+    * [`config`] - valida a configuração daquele compose
+    * [`up`] - sobe aquele compose iniciando as config e serviços
+    * [`down`] - baixa aquele compose desativando os serviços
 
 ## Comandos úteis Linux
 

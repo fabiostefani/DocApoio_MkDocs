@@ -39,3 +39,4 @@ nav:
   - Docker:
     - docker/index.md             
     - Exemplo DockerFile: docker/exemplos_dockerfile.md    
+    - Exemplo Dockercompose: docker/exemplos_docker_compose.md    
