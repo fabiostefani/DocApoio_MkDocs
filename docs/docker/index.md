@@ -9,11 +9,13 @@ Comandos do Docker
     * [`<comando> --help`] - informações adicionados do comando docker.    
     * [`image`] - trabalha com as imagens
         * [`ls`] - lista as imagens
+        * [`history <nome imagem>`] - apresenta o histórico dos comandos de execução da criação da imagem
+        * [`inspect <nome imagem>`] - inspeciona a imagem, mostrando suas propriedades
     * [`build <caminho docker file> -t <nome imagem:`] - compila uma imagem. Precisa de um 
             * [`-t <nome imagem>`] - especifica o nome da imagem
     * [`push`] - envia a imagem para o docker hub
     * [`pull <imagem:version>`] - baixa a imagem para o servidor
-    * [`rmi <nome da imagem>`] - remove uma imagem
+    * [`rmi <nome da imagem>`] - remove uma imagem    
     
 ### Containers
 * `docker`
@@ -32,6 +34,7 @@ Comandos do Docker
         * [`-e <enviroment>`] - para informar uma variável de ambiente que será utilizada pelo container. Pode ser passada várias vezes. Exemplo -e app=fabio 
         * [`--rm`] - vai remover o container após utilizar ele.
         * [`--network <rede>`] - especifica qual rede aquele container vai usar
+        * [`-P`] - expoe uma porta de forma aleatória
     * [`stop <id container>`] - interrompe um container em execução
     * [`start <id container>`] - inicia um container ja criado
     * [`exec --it nginx //bin/bash`] - disponibiliza a execução de comandos dentro do container
