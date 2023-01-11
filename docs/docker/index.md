@@ -15,7 +15,7 @@ Comandos do Docker
             * [`-t <nome imagem>`] - especifica o nome da imagem
     * [`push`] - envia a imagem para o docker hub
     * [`pull <imagem:version>`] - baixa a imagem para o servidor
-    * [`rmi <nome da imagem>`] - remove uma imagem    
+    * [`rmi <nome da imagem>`] - remove uma imagem        
     
 ### Containers
 * `docker`
@@ -48,6 +48,7 @@ Comandos do Docker
     * [`push`] - envia a imagem para o docker hub
     * [`top <idcontainer>`] - mostra os processos que estão em execução dentro do container
     * [`kill <idcontainer>`] - encerra a execução do container
+    * [`attach <nome da container>`] - entra no container para executar comandos. OBS: o container deve ter sido executado com -it
 
 ### Volumes    
 * `docker`
@@ -68,6 +69,9 @@ Comandos do Docker
         * [`disconnect <rede> <container>`] - desconecta um container em uma rede
         * [`prune`] - apaga as redes não utilizadas
         * [`rm <nome da rede>`] - remove uma rede
+    
+    OBS: se precisar fazer o container acessar alguma rede da máquina, é só utilizar o
+    host.docker.internal, exemplo http://host.docker.internal:8000
 
 ### Compose 
 * `docker-compose`
