@@ -78,7 +78,42 @@ Comandos do Docker
     * [`<comando> --help`] - informações adicionados do comando docker.    
     * [`config`] - valida a configuração daquele compose
     * [`up`] - sobe aquele compose iniciando as config e serviços
-    * [`down`] - baixa aquele compose desativando os serviços
+    * [`up -d`] - sobe aquele compose iniciando as config e serviços e desatacha o terminar
+    * [`up -d --build`] - gera novas imagens com as modificações realizadas no docker file
+    * [`down`] - baixa aquele compose desativando os serviços        
+    * [`ps`] - lista o estado dos containers daquele compose
+
+### Estrutura Compose 
+```
+version: 'xx' - especifica a versão do docker compose
+services: - definição de quais serviços (containers) serão publicados. Posso ter vários declarados dentro do compose
+    <nome service>: - define o nome do serviço
+    build: - para quando querer compilar a imagem junto com o compose
+       context: - diretorio que terá o dockerfile
+       dockerfile: - nome do docker file que tenha que buildar
+    image: - imagem docker que irá subir no compose
+    container_name: - nome do container
+    entrypoint: - comando a ser executado na inicialização. Pode ser usado com o dockerize para validar se o serviço necessário ja está no ar
+    networks: - especifica a network que o container irá estar
+       - <name> - nome da rede
+    ports: - especifica as portas que desejo liberar
+       - "<porta_maquina>:<porta_container>" - especifica as portas
+    command: - comando a ser executado na inicialização do container
+    restart: <valor> - especifica o modo de restart do container. Valores possíveis: always
+    tty: <valor> - especifica se deixa o tty habilitado (true/false)
+    volumes: - especifica o volume para persistência de dados
+       - <dir_local>:<dir_container> - mapeia o diretório local para o diretório do container
+    environment: - especifica as variáveis de ambiente do container
+       - <VARIVEL> - define a variável de ambiente, cada imagem tem suas especifidades.
+    dependes_on: - espera o service definido na configurar subir para depois subir esse serviço;
+       - <nome service> - define o nome service que tem que aguardar subir
+```
+dockerrize
+
+* `networks:` - definição de quais networks o compose tem que subir
+* `    <nome rede>:` - define o nome da rede
+* `       driver: <tipo driver>` - especifica o tipo de rede (bridge, host, overlay)
+
 
 ## Comandos úteis Linux
 
